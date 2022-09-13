@@ -1,5 +1,6 @@
 import RecipeScroll from "./components/RecipeScroll/RecipeScroll";
 import "./App.css"
+import RecipeCreator from "./components/RecipeCreator/RecipeCreator";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
             <header className="AppHeader">
 
             </header>
+            {/*<RecipeCreator/>*/}
             <RecipeScroll/>
         </div>
     );
