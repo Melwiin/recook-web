@@ -21,7 +21,9 @@ export default function RecipeScroll() {
 
     return (
         <div className="recipe-scroll-wrapper">
+            <h2>Our Recipes:</h2>
             <div className="recipe-scroll">
+
                 {recipes.map((recipe) => {
                   return <RecipeCard
                       key={recipe.id}

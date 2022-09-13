@@ -12,6 +12,11 @@
   /*overflow: hidden;*/
 }
 
+.recipe-card-wrapper:hover { cursor: pointer; }
+.recipe-card-wrapper:hover .recipe-title{
+  color: #66bf3c;
+}
+
 .preview-img {
   width: 220px;
   height: 220px;
@@ -22,8 +27,7 @@
 
 .recipe-title {
   font-size: 20px;
-
-  text-wrap: normal;
+  transition: color 200ms ease-in-out;
 }
 .recipe-description {
   font-size: 15px;
