@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+.search-bar {
+    position: relative;
+    width: 500px;
+    padding: 7px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 12%), 0 0 1px rgb(0 0 0 / 5%) inset;
+}
+
+.search-suggestion-box {
+    position: absolute;
+    width: 500px;
+    padding: 0 7px;
+    background-color: white;
+
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.18), 0 0 1px rgba(0,0,0,0.18) inset;
+    border-radius: 8px;
+    z-index: 3;
+
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-suggestion-box::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    box-shadow: -1px -1px 2px rgba(0,0,0,0.12);
+    transform: translateY(50%) rotate(45deg);
+    background: #fff;
+}
+
+.search-suggestion-list {
+    margin: 1rem 2rem;
+    list-style: none;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.search-suggestion-list li {
+    padding: 0.5rem;
+}
+
+.search-bar img {
+    width: 25px;
+    place-self: center;
+}
+
+.search-bar input {
+    border: 0;
+    background-color: transparent;
+    height: 30px;
+}
+
+.search-bar input:focus {
+    outline: 0;
+}
