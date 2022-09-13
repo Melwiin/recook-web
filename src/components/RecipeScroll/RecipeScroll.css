@@ -1,0 +1,8 @@
+.recipe-scroll-wrapper {
+    width: 80%;
+}
+.recipe-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
