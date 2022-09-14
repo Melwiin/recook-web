@@ -49,6 +49,12 @@
 
 .search-suggestion-list li {
     padding: 0.5rem;
+    transition: color 200ms ease-in-out;
+}
+
+.search-suggestion-list li:hover {
+    color: #66bf3c;
+    cursor: pointer;
 }
 
 .search-bar img {
