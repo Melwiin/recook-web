@@ -15,13 +15,14 @@
 
 .search-suggestion-box {
     position: absolute;
-    width: 500px;
-    padding: 0 7px;
+    width: 514px;
     background-color: white;
 
     box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.18), 0 0 1px rgba(0,0,0,0.18) inset;
     border-radius: 8px;
     z-index: 3;
+
+    padding: 1rem 0;
 
     top: 80px;
     margin-left: auto;
@@ -41,15 +42,25 @@
 }
 
 .search-suggestion-list {
-    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
 
 .search-suggestion-list li {
-    padding: 0.5rem;
     transition: color 200ms ease-in-out;
+    padding: 1rem 2rem;
+}
+
+.search-suggestion-list li.selected {
+    background-color: rgba(202, 202, 202, 0.37);
+}
+
+.search-suggestion-list a {
+    color: #333333;
+    text-decoration: none;
 }
 
 .search-suggestion-list li:hover {

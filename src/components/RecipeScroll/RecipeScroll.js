@@ -11,7 +11,6 @@ export default function RecipeScroll() {
         axios.get("http://localhost:8080/api/v1/recipes")
             .then(res => {
                 setRecipes(res.data);
-                console.log(res.data);
             })
     }
 
@@ -31,6 +30,7 @@ export default function RecipeScroll() {
                       imageUri={"http://localhost:8080/api/v1/recipes/image?imageUri=" + recipe.imageUri}
                       recipeTitle={recipe.recipeTitle}
                       recipeDescription={recipe.recipeDescription}
+                      recipeId={recipe.id}
                   />
                 })}
             </div>

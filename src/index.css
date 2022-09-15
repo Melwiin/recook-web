@@ -3,13 +3,27 @@
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-body {
+body, body > *{
   overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #aab74d;
+  border-radius: 10px;
 }

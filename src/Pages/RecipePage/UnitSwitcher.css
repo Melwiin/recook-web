@@ -1,0 +1,18 @@
+.unit-switcher {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.unit-switcher > span {
+    margin: 0 0.3rem;
+    font-weight: 400;
+    transition: color 200ms ease-in-out;
+}
+
+.unit-switcher > span.active {
+    color: #66bf3c;
+}
+
+.unit-switcher:nth-child(2n+1):hover {
+    cursor: pointer;
+}
